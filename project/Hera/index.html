@@ -1,0 +1,344 @@
+
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+   <title>Hera</title>
+   <meta charset='utf-8'>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet"> 
+   
+   <!-- 반응형 웹사이트 제작 -->
+   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.8, minimum-scale=1.0'>   
+   
+   <!-- 회사 홈페이지 title, subject, 키워드, 설명, 분류, 저작권, 제작사, 제작날짜, 퍼브리셔, 제작지역, 로봇엔진-인덱스,메인  -->
+   <meta name='Title'          content='Hera'>
+   <meta name='Subject'       content='Hera Cosmetic'>
+   <meta name='Keywords'       content='Hera, Beauty, Cosmetic'>
+   <meta name='Description'    content='Seoul beauty is about finding one’s natural beauty that lies deeply in having a strong inner sense of confidence  and bringing it out to shine - This is the philosophy of HERA'>
+   <meta name='Classification' content='Beauty'>
+   <meta name='Copyright'       content='Hera'>
+   <meta name='Author'       content='Hera'>
+   <meta name='Author-date'    content='2021-02-14'>
+   <meta name='Publisher'       content='Younjae Lee'>
+   <meta name='Location'       content='Seoul Korea'>
+   <meta name='Robots'       content='index,follow'>  <!-- meta robots 태그를 사용해서 인덱싱을 제어. 사용 가능한 content 로는 index, noindex, follow, nofollow. 
+   index와 noindex는 페이지의 인덱스 여부를 말해주며 follow, nofollow는 페이지내의 링크를 크롤러가 따라갈수 있느냐 없느냐의 여부 .
+   index는 로봇이 본페이지 방문을 허용하는지,  follow는 로봇이 본페이지의 링크세테이션을 기준으로 방문을 허용하는지 기준
+   출처: https://hunit.tistory.com/312 [HunIT Blog]
+-->
+   
+   <link href='css/reset.css' rel='stylesheet'>
+   <link href='css/style.css' rel='stylesheet'>
+   <link href='css/respons.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>   
+   
+   <!-- 자바스크립트가 실행되기위한 스크립트 라이브러리 -->
+   <script src='js/lib/jquery-1.12.4.min.js'></script>
+   <!-- 벤더프리픽스를 붙이지 않아도 되는 스크립트 -->
+   <script src='js/lib/prefixfree.min.js'></script>
+   <!-- 제작자 스크립트 -->
+   <script src='js/appbar.js'></script>
+   
+
+</head>
+<body>
+
+<div id="wrap">
+   <header id="header">
+      <div>
+         <ul class="pc floatclear">
+            <li>
+               <h1>
+                  <a href="index.html">
+                     <img src="img/hera_logo.png" alt="logo">
+                  </a>
+               </h1>
+            </li>
+            <li>
+               <aside class="floatclear">
+                  <ul class="floatclear">
+                     <li><a href="#none">Join</a></li>
+                     <li> | </li>
+                     <li><a href="#none">Log in</a></li>
+                     <li><a href="#none">Search</a></li>
+                     <li><a href="#none"><i class="fa fa-search"></i></a></li>
+                  </ul>
+               </aside>
+               <nav>
+                  <ul class="floatclear">
+                     <li><a href="story.html">HERA STORY</a></li>
+                       <li><a href="season.html">SEASON COLLECTION</a></li>
+                       <li><a href="makeup.html">MAKEUP</a></li>
+                       <li><a href="skincare.html">SKINCARE</a></li>
+                       <li><a href="fragrance.html">FRAGRANCE</a></li>
+                     
+                  </ul>
+               </nav>
+            </li>
+         </ul>  <!-- class="pc floatclear" -->
+         
+         <div id="mobile_header">
+            <div class="mobHeader">
+                <div class="mobLogo"><h2><a href="index.html"><img src="img/hera_logo_b.png" alt=""></a></h2></div>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            
+                <ul class="menu">
+                    <li><a href="story.html">HERA STORY</a></li>
+                    <li><a href="season.html">SEASON COLLECTION</a></li>
+                    <li><a href="makeup.html">MAKE UP</a></li>
+                    <li><a href="skincare.html">SKINCARE</a></li>
+                    <li><a href="fragrance.html">FRAGRANCE</a></li>
+                </ul>
+            </div>
+        </div>
+         
+         <!-- <div class="mobile">
+            <ul class="dropdown">
+               <li >
+                  <a href="#none" class="appBarBtn" type="checkbox">
+                     <i class="bar1 bar"></i>
+                     <i class="bar2 bar"></i>
+                     <i class="bar3 bar"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="index.html" class="mobile-logo-btn">
+                     <img src="img/hera_logo_b.png" alt="">
+                  </a>
+               </li>
+               <li><a href="#none" class="mobile-find-btn"><i class="fa fa-search"></i></a></li>
+               
+            </ul>
+
+               <ul class="menu">
+                  <li><a href="story.html">HERA STORY</a><li>
+                  <li><a href="season.html">SEASON COLLECTION</a><li>
+                  <li><a href="makeup.html">MAKE UP</a><li>
+                  <li><a href="skincare.html">SKINCARE</a><li>
+                  <li><a href="#none">FRAGRANCE</a><li>
+
+
+               </ul>
+         </div> <!-- class="mobile" -->
+      </div>
+   </header>
+   <main id="main">
+      <section id="section1">
+         <div>
+            <video class="mainVideo" autoplay loop muted poster='content'> 
+               <!-- 동영상이 로딩될때까지 보여질 이미지 poster -->
+               <source src="video/main.mp4" type="video/mp4">
+            </video>
+            <div class="section1-bottom-icon-wrap">
+               <div class="section1-icon-center-wrap">
+                  <p>Scroll Down</p>
+                  <a href="#section1_1"><i class="fa fa-angle-down"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="section1_1">
+         <div class="product">
+            
+            <div class="product_box">
+                    <ul>
+                       <h2>HERA'S PICK</h2>
+                        <p>BEST 상품 모아보기</p>
+                        <li><a href="makeup.html"><img src="img/pick1.png" alt="category"><h4>ROUGE HOLIC</h4><p>40,000원</p></a></li>
+                        <li><a href="makeup.html"><img src="img/pick2.png" alt="category"><h4>GLOW LASTING CUSHION</h4><p>60,000원</p></a></li>
+                        <li><a href="makeup.html"><img src="img/pick3.png" alt="category"><h4>YOUTH ACTIVATING CELL SERUM</h4><p>95,000원</p></a></li>
+                    </ul>
+            </div> 
+        </div> <!-- class=product -->
+      </section>
+
+      <section>
+         <div id="back_att">
+             <div class="title">
+                 <h2><img src="img/hera_logo.png" alt=""></h2>
+                 <p>당당하고 강인한 자아와 내면 그 깊은 곳에서부터
+                  존재하는 나만의 아름다움을 스스로 발견하고 <br>
+                  자신 있게 드러내는 것이 서울 뷰티에 대한 헤라의 신념입니다.</p>
+             </div>
+         </div>
+      </section>
+
+      <section id="section2">
+         <div>
+            <ul class="floatclear">
+               <li>
+                  <video class="mainVideo" autoplay loop muted poster='content'> 
+                     <!-- 동영상이 로딩될때까지 보여질 이미지 poster -->
+                     <source src="video/video5-2.mp4" type="video/mp4">
+                  </video>
+               </li>
+               <li>
+                  <ul>
+                     <li>
+                        <h2>
+                           나만의 것을 당당하게 드러내는 서울리스타
+                           <span></span>
+                        </h2>
+                     </li>
+                     <li>
+                        <p>
+                           서울리스타의 아름다움, 그 중심엔 ‘나다움’이 있습니다. 자신에게 어울리는 표현을 누구보다 잘 이해하고 스스로를 탐구하는데 열정을 아끼지 않는 그녀들은 지나치게 꾸미지 않고도 자신만의 취향과 방식으로 매력적인 스타일을 완성해 나갑니다. 헤라는 깊이로부터 발산되는 아름다움을 위해 하나로 연결 되어진 일련의 루틴 피부 속 가장 깊은 곳에서부터 시작됩니다.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               
+            </ul>
+         </div>
+      </section>
+      <section id="section3">
+         <div>
+            <div class="title3">
+               <h2>카테고리별 모아보기</h2>
+            </div>
+            <div class="section3-nav">
+               
+               <ul>
+                  <li><a href="makeup.html"><img src="img/icon1.png" alt="icon" width="100px"><p>전체상품</p></a></li>
+                  <li><a href="makeup.html"><img src="img/icon2.png" alt="icon" width="100px"><p>메이크업</p></a></li>
+                  <li><a href="skincare.html"><img src="img/icon3.png" alt="icon" width="100px"><p>스킨케어</p></a></li>
+                  <li><a href="fragrance.html"><img src="img/icon4.png" alt="icon" width="100px"><p>향수</p></a></li>
+                  <li><a href="#none"><img src="img/icon5.png" alt="icon" width="100px"><p>바디케어</p></a></li>
+                  <li><a href="#none"><img src="img/icon6.png" alt="icon" width="100px"><p>소품&도구</p></a></li>
+                  <li><a href="#none"><img src="img/icon7.png" alt="icon" width="100px"><p>선물추천</p></a></li>
+
+               </ul>
+            </div>
+            <ul class="section3-video floatclear">
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video1.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>MAKEUP</h2></li>
+                        <li><p>메이크업 모아보기</p></li>
+                        <li><a href="makeup.html"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video2.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>SKINCARE</h2></li>
+                        <li><p>스킨케어 모아보기</p></li>
+                        <li><a href="skincare.html"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video3.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>FRAGRANCE</h2></li>
+                        <li><p>향수 모아보기</p></li>
+                        <li><a href="fragrance.html"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video4.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>BODY CARE</h2></li>
+                        <li><p>생활용품 모아보기</p></li>
+                        <li><a href="#none"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video5.mp4" type="video/mp4"> 
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>TOOLS</h2></li>
+                        <li><p>소품&도구 모아보기</p></li>
+                        <li><a href="#none"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/video6.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>GIFTS</h2></li>
+                        <li><p>선물추천 모아보기</p></li>
+                        <li><a href="#none"><span>More</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               
+            </ul>
+         </div>
+      </section>
+      <section id="section4">
+         <div>
+            <button><a href="https://www.hera.com/kr/ko/misc/store/store.html">매장찾기</a></button>
+         </div>
+      </section>
+   </main>
+   <footer id="footer">
+      <div>
+         <ul>
+            <li>
+               <ul class="footer-sitemap-wrap floatclear">
+                  <li>
+                     <i></i>
+                     <h2>HERA</h2>
+                     <ul class="footer-sub">
+                        <li><a href="#none">Terms and Conditions</a></li>
+                        <li><a href="#none">Site Map</a></li>
+                        <li><a href="#none">Language | EN</a></li>
+            
+                     </ul>
+                  </li>
+                  
+               </ul>
+            </li>
+            <li>
+               <address>
+                  <ul class="floatclear">
+                     <li>
+                        &copy; AMOREPACIFIC CORPORATION. All rights reserved.
+                     </li>
+                     <li>
+                        <ul class="floatclear">
+                           <li><a href="#none"><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href="#none"><i class="fab fa-instagram"></i></a></li>
+                           <li><a href="#none"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </address>
+            </li>
+         </ul>
+      </div>
+   </footer>
+</div>
+</body>
+</html>

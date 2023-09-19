@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RIDIBOOKS</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- 스크립트 -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/more.js"></script>
+</head>
+
+<body>
+
+    <!-- main1 -->
+    <div data-role="page" id="main1" class="main">
+
+        <div data-role="header" data-position="fixed" id="header">
+            <div id="headrer_top">
+                <h1 data-role="none">
+                    <a href="#" data-role="none" class="logo">
+                        <img src="./img/ridibooks_logo.png" alt="로고">
+                    </a>
+                </h1>
+                <div id="btn" class="ui-btn-right">
+                    <a href="#search" data-role="none" class="search">
+                        <img src="img/icon_search.png" width="20" alt="돋보기">
+                    </a>
+                    <a href="#none" data-role="none" class="bell">
+                        <img src="img/icon_bell.png" width="20" alt="알림">
+                    </a>
+                </div>
+            </div>
+            <div data-role="navbar" id="main_tab">
+                <ul>
+                    <li><a id="tab1" href="#main1" class="ui-btn-active">일반소설</a></li>
+                    <li><a id="tab2" href="#main2">로맨스</a></li>
+                    <li><a id="tab3" href="#main3">판타지</a></li>
+                    <li><a id="tab4" href="#main4">만화</a></li>
+                    <li><a id="tab5" href="#main5">BL</a></li>
+                </ul>
+            </div>
+        </div>
+
+    
+
+        <div data-role="content" id="content">
+
+            <!-- 급상승 -->
+            <div id="main_cont1">
+                <div class="list1">
+                    <h3>급상승</h3>
+                    <ol class="sub_text">
+                        <li style="top:0"><a href="#" class="data">달러구트 꿈 백화점</a></li>
+                        <li><a href="#" class="data">우리가 빛의 속도로 갈 수 없다면</a></li>
+                        <li><a href="#" class="data">그 환자</a></li>
+                        <li><a href="#" class="data">우리의 정류장과 필사의 밤</a></li>
+                        <li><a href="#" class="data">그녀 클로이</a></li>
+                        <li><a href="#" class="data">미시마야 변조괴담</a></li>
+                        <li><a href="#" class="data">창문 넘어 도망치 100세 노인</a></li>
+                        <li><a href="#" class="data">내가 너에게 절대로 말하지 않는 것들</a></li>
+                        <li><a href="#" class="data">흰 눈은 모든 것을 덮는다</a></li>
+                        <li><a href="#" class="data">19호실로 가다</a></li>
+                    </ol>
+                    <div class="plus"><a href="#">더보기</a></div>
+                </div>
+            </div>
+            <!-- 급상승 -->
+
+            <!-- 슬라이드 배너 -->
+            <div id="main_slide">
+                <div id="slide_wrap">
+                    <ul class="cf">
+                        <li class="slide_img1"><a href="#"></a></li>
+                        <li class="slide_img2"><a href="#"></a></li>
+                        <li class="slide_img3"><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="slide_num">
+                    <ul>
+                        <li class="on"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </div>
+                <div id="btnImg">
+                    <img src="img/arrow_left.png" alt="이전버튼" width="30" class="prev">
+                    <img src="img/arrow_right.png" alt="다음버튼" width="30" class="next">
+                </div>
+            </div>
+            <!-- 슬라이드 배너 -->
+            
+
+            <!-- 아이콘 스와이퍼 -->
+            <div id="icon_swiper">
+    
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+        
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon1"></div><div class="text">신간</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon2"></div><div class="text">이벤트</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon4"></div><div class="text">빌려서가</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon7"></div><div class="text">일반혜택지도</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon3"></div><div class="text">베스트셀러</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon5"></div><div class="text">지금인기세트</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon6"></div><div class="text">신간캘린더</div></a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon8"></div><div class="text">위클리쿠폰</div></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none"><div class="icon9"></div><div class="text">리디페이퍼</div></a>
+                        </div>
+
+                    </div>
+                </div><!-- <div class="swiper-container"> -->
+            </div>
+            <!-- 아이콘 스와이퍼 -->
+            
+
+            <!-- 신간리스트 -->
+            <div id="new_list">
+                <div class="swiper-container2">
+                    <div class="s_tit">집 앞 서점에 방금 나온 신간!<span>전체보기></span></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new1.jpg" width="100%" alt="파는사람들"></div>
+                                <div class="text"><p>파는 사람들</p><p>파는 사람들</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new2.jpg" width="100%" alt="부의대이동"></div>
+                                <div class="text"><p>부의 대이동</p><p>오건영</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new3.jpg" width="100%" alt="슈퍼펌프드"></div>
+                                <div class="text"><p>슈퍼 펌프드</p><p>마이크 아이작</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new4.jpg" width="100%" alt="복자에게"></div>
+                                <div class="text"><p>복자에게</p><p>김금희</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new5.jpg" width="100%" alt="프리즘"></div>
+                                <div class="text"><p>프리즘</p><p>손원평</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new6.jpg" width="100%" alt="조지오웰산문선"></div>
+                                <div class="text"><p>조지 오웰 산문선</p><p>조지 오웰</p></div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div><!-- <div class="swiper-container"> -->
+            </div>
+            <!-- 신간리스트 -->
+
+
+            <div id="banner_main"><a href="#none"></a></div>
+
+
+            <!-- 리드몰 -->
+            <div id="ranking_wrap">
+                <div id="ranking" class="ranking">
+                    <div class="s_tit">실시간 랭킹<span>전체보기></span></div>
+                    <div class="tab_content">  
+                        <ul>
+                            <li class="box1">
+                                <div class="img"><img src="./img/book_now1.jpg" width="100%" alt="해리포터"></div>
+                                <div class="text">
+                                    <p>1</p><p>해리 포터 시리즈 개정 번역판<span>조앤.k.롤링</span></p>
+                                </div>
+                            </li>
+                            <li class="box2">
+                                <div class="img"><div><img src="./img/book_new2.jpg" width="100%" alt="부의대이둉"></div></div>
+                                <div class="text">
+                                    <p>2</p><p>부의 대이동<span>오건영</span></p>
+                                </div>
+                            </li>
+                            <li class="box3">
+                                <div class="img"><div><img src="./img/book_now3.jpg" width="100%" alt="달러구트"></div></div>
+                                <div class="text">
+                                    <p>3</p><p>달러구트 꿈 백화점 |잠들어야만 입장 가능합니다<span>이미애</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ranking_loadmore" class="ranking hide">
+                    <div class="tab_content">
+                        <ul>
+                            <li class="box4">
+                                <div class="img"><div><img src="./img/book_now4.jpg" width="100%" alt="녹나무의파수꾼"></div></div>
+                                <div class="text">
+                                    <p>4</p><p>녹나무의 파수꾼<span>히가시노 게이고</span></p>
+                                </div>
+                            </li>
+                            <li class="box5">
+                                <div class="img"><div><img src="./img/book_now5.jpg" width="100%" alt="눈물을마시는새"></div></div>
+                                <div class="text">
+                                    <p>5</p><p>눈물을 마시는 새<span>이영도</span></p>
+                                </div>
+                            </li>
+                            <li class="box6">
+                                <div class="img"><div><img src="./img/book_now6.jpg" width="100%" alt="태백산맥"></div></div>
+                                <div class="text">
+                                    <p>6</p><p>태백산맥<span>조정래</span></p>
+                                </div>
+                            </li>
+                            <li class="box7">
+                                <div class="img"><div><img src="./img/book_now7.jpg" width="100%" alt="이별의수법"></div></div>
+                                <div class="text">
+                                    <p>7</p><p>이별의 수법<span>와카타케 나나미</span></p>
+                                </div>
+                            </li>
+                            <li class="box8">
+                                <div class="img"><div><img src="./img/book_now8.jpg" width="105%" alt="존리"></div></div>
+                                <div class="text">
+                                    <p>8</p><p>존리의 부자되는 습관<span>존 리</span></p>
+                                </div>
+                            </li>
+                            <li class="box9">
+                                <div class="img"><div><img src="./img/book_now9.jpg" width="100%" alt="타이탄의도구들"></div></div>
+                                <div class="text">
+                                    <p>9</p><p style="border: 0;">타이탄의 도구들<span>티모시 페리스</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="loadmore">LOAD MORE</button>
+                <button type="button" class="close">CLOSE</button>
+            </div>
+            <!-- 리드몰 -->
+
+
+            <!-- 북리스트 -->
+            <div id="book_list1" class="book_list">
+                <div class="swiper-container2">
+                    <div class="s_tit">이번달 베스트셀러<span>전체보기></span></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new1.jpg" width="100%" alt="파는사람들"></div>
+                                <div class="text"><p>파는 사람들</p><p>파는 사람들</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new2.jpg" width="100%" alt="부의대이동"></div>
+                                <div class="text"><p>부의 대이동</p><p>오건영</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new3.jpg" width="100%" alt="슈퍼펌프드"></div>
+                                <div class="text"><p>슈퍼 펌프드</p><p>마이크 아이작</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new4.jpg" width="100%" alt="복자에게"></div>
+                                <div class="text"><p>복자에게</p><p>김금희</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new5.jpg" width="100%" alt="프리즘"></div>
+                                <div class="text"><p>프리즘</p><p>손원평</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new6.jpg" width="100%" alt="조지오웰산문선"></div>
+                                <div class="text"><p>조지 오웰 산문선</p><p>조지 오웰</p></div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div><!-- <div class="swiper-container"> -->
+            </div>
+            <!-- 북리스트 -->
+
+            <!-- 북리스트 -->
+            <div id="book_list2" class="book_list">
+                <div class="swiper-container2">
+                    <div class="s_tit">올해 출간된 1,900원 도서<span>전체보기></span></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new1.jpg" width="100%" alt="파는사람들"></div>
+                                <div class="text"><p>파는 사람들</p><p>파는 사람들</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new2.jpg" width="100%" alt="부의대이동"></div>
+                                <div class="text"><p>부의 대이동</p><p>오건영</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new3.jpg" width="100%" alt="슈퍼펌프드"></div>
+                                <div class="text"><p>슈퍼 펌프드</p><p>마이크 아이작</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new4.jpg" width="100%" alt="복자에게"></div>
+                                <div class="text"><p>복자에게</p><p>김금희</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new5.jpg" width="100%" alt="프리즘"></div>
+                                <div class="text"><p>프리즘</p><p>손원평</p></div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="book"><img src="./img/book_new6.jpg" width="100%" alt="조지오웰산문선"></div>
+                                <div class="text"><p>조지 오웰 산문선</p><p>조지 오웰</p></div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div><!-- <div class="swiper-container"> -->
+            </div>
+            <!-- 북리스트 -->
+            
+            <!-- 책추천 -->
+            <div id="today_best">
+                <div class="swiper-container3">
+                    <div class="s_tit">RIDI의 추천<span>전체보기></span></div>
+
+                    <div class="swiper-wrapper">
+            
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="box1">
+                                    <div class="img"><img src="./img/main_book_re1.png" width="100%" alt="책추천"></div>
+                                    <div class="text">
+                                        <p>오스카 와일드, 아홉가지 이야기</p>
+                                        <p>길게 기른 머리카락, 단추 구멍에 꽂은 꽃.<br>영문학의 독보적인 멋쟁이 오스카 와일드가 남긴<br>9편의 단편을 만나보세요.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="box1">
+                                    <div class="img"><img src="./img/main_book_re2.png" width="100%" alt="책추천"></div>
+                                    <div class="text">
+                                        <p>19호실로 가다</p>
+                                        <p>2007년 노벨문학상 수상자.<br>평생 차별에 맞서 싸운 도리스 레싱의 대표작을 읽어보세요</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#none">
+                                <div class="box1">
+                                    <div class="img"><img src="./img/main_book_re3.png" width="100%" alt="책추천"></div>
+                                    <div class="text">
+                                        <p>이러다 죽겠다 싶어서 운동을 시작했습니다</p>
+                                        <p>몸이 찌뿌둥하고 체력이 떨어지는 게 느껴지나요?<br>쉬워도 효과는 만점! 겨울이 오기 전, 체력을 길러보세요!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    
+            
+                    </div>
+                </div><!-- <div class="swiper-container"> -->
+            </div>
+            <!-- 책추천 -->
+            
+
+            <div id="main_footer">
+                <ul class="cf">
+                    <li><a href="#"><img src="img/footer_sns1.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="img/footer_sns2.png" alt="인스타"></a></li>
+                    <li><a href="#"><img src="img/footer_sns3.png" alt="유투브"></a></li>
+                    <li><a href="#"><img src="img/footer_sns4.png" alt="트위터"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>
+                        서울시 강남구 역삼동 702-28 어반벤치빌딩 10층(테헤란로 325)<br>
+                        
+                        리디 (주) 대표 배기식 사업자등록번호 120-87-27435 <br>
+                        Copyright © 2020 RIDIBOOKS All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+
+
+        <div data-role="footer" data-position="fixed" id="footer">
+            <a href="#main1" data-role="none" class="home"><img src="img/icon_home.png" alt="home">홈</a>
+            <a href="#search" data-role="none" class="search"><img src="img/icon_search.png" alt="search"> 검색</a>
+            <a href="#mybook" data-role="none" class="mybook"><img src="img/icon_bookmark.svg" alt="mybook"> 내서재</a>
+            <a href="#cart" data-role="none" class="cart"><img src="img/icon_cart.svg" alt="cart"> 카트</a>
+            <a href="#setting" data-role="none" class="Setting"><img src="img/icon_setting.svg" alt="setting"> 관리</a>
+        </div>
+
+    </div>
+    <!-- main1 -->
+
+
+    <!-- search-->
+    <div data-role="page" id="search">
+
+        <div data-role="header" data-position="fixed" id="header">
+            <div>
+                <h1 data-role="none">
+                    <a href="main1" data-role="none" class="logo">
+                        <img src="./img/ridibooks_logo.png" alt="로고">
+                    </a>
+                </h1>
+                <div id="btn" class="ui-btn-right">
+                    <a href="#search" data-role="none" class="search">
+                        <img src="img/icon_search.png" width="20" alt="돋보기">
+                    </a>
+                    <a href="#none" data-role="none" class="bell">
+                        <img src="img/icon_bell.png" width="20" alt="알림">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div data-role="content" id="search_content">
+            <div class="cf">
+                <div id="search_box">
+                    <input type="text" name="user_search" placeholder="검색어를 입력하세요." class="user_search" data-role="none">
+                    <a href="#"><img src="img/icon_search.png" width="30" alt="검색아이콘"></a>
+                </div>
+            </div>
+
+            <div class="list list1">
+                <p>리디 추천 검색어</p>
+                <ul>
+                    <li><a href="#">#집 앞 서점에 방금 나온 신간!</a></li>
+                    <li><a href="#">#사람들이 지금 많이 읽고 있는 책</a></li>
+                    <li><a href="#">#오늘, 리디의 발견</a></li>
+                    <li><a href="#">#베스트셀러</a></li>
+                    <li><a href="#">#올해 출간된 빌려서가 1,00원 도서 보러가기</a></li>
+                    <li><a href="#">#안돼?안돼? 긴가민가 헷갈리는 생활 속 맞춤법</a></li>
+                </ul>
+            </div>
+
+            <div class="list2"><img src="img/banner-search.png" width="100%" alt=""></div>
+
+            <div class="list list3">
+                <p>분야별 추천 콘텐츠</p>
+                <ul class="cf">
+                    <li class="w50"><a href="#none"><p>방금나온 신간</p></a></li>
+                    <li class="w50"><a href="#none"><p>베스트셀러</p></a></li>
+                    <li class="w50"><a href="#none"><p>오늘, 리디의 발견</p></a></li>
+                    <li class="w50"><a href="#none"><p>지금 인기세트</p></a></li>
+                    <li><a href="#none"><p>챗북</p></a></li>
+                    <li><a href="#none"><p>매거진</p></a></li>
+                    <li><a href="#none"><p>소설</p></a></li>
+                    <li><a href="#none"><p>세계문학<br>전집</p></a></li>
+                    <li><a href="#none"><p>인문</p></a> </li>
+                    <li><a href="#none"><p>철학</p></a> </li>
+                    <li><a href="#none"><p>사회</p></a> </li>
+                    <li><a href="#none"><p>에세이</p></a></li>
+                    <li><a href="#none"><p>과학</p></a> </li>
+                    <li><a href="#none"><p>역사</p></a> </li>
+                    <li><a href="#none"><p>경제경영</p></a> </li>
+                    <li><a href="#none"><p>자기계발</p></a> </li>
+                    <li><a href="#none"><p>여행</p></a> </li>
+                    <li><a href="#none"><p>라이프<br>스타일</p></a></li>
+                    <li><a href="#none"><p>부모</p></a> </li>
+                    <li><a href="#none"><p>어린이<br>청소년</p></a></li>
+                    <li><a href="#none"><p>종교</p></a> </li>
+                    <li><a href="#none"><p>판타<br>무협</p></a></li>
+                    <li><a href="#none"><p>로맨스<br>bl</p></a></li>
+                    <li><a href="#none"><p>만화</p></a> </li>
+                    <li><a href="#none"><p>애니메이션</p></a></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" id="footer">
+            <a href="#main1" data-role="none" class="home"><img src="img/icon_home.png" alt="home">홈</a>
+            <a href="#search" data-role="none" class="search"><img src="img/icon_search.png" alt="search"> 검색</a>
+            <a href="#mybook" data-role="none" class="mybook"><img src="img/icon_bookmark.svg" alt="mybook"> 내서재</a>
+            <a href="#cart" data-role="none" class="cart"><img src="img/icon_cart.svg" alt="cart"> 카트</a>
+            <a href="#setting" data-role="none" class="Setting"><img src="img/icon_setting.svg" alt="setting"> 관리</a>
+        </div>
+    </div>
+    <!-- search-->
+
+
+    <!--mybook-->
+    <div data-role="page" id="mybook">
+
+        <div data-role="header" data-position="fixed" id="header">
+            <div>
+                <h1 data-role="none">
+                    <a href="main1" data-role="none" class="logo">
+                        <img src="./img/ridibooks_logo.png" alt="로고">
+                    </a>
+                </h1>
+                <div id="btn" class="ui-btn-right">
+                    <a href="#search" data-role="none" class="search">
+                        <img src="img/icon_search.png" width="20" alt="돋보기">
+                    </a>
+                    <a href="#none" data-role="none" class="bell">
+                        <img src="img/icon_bell.png" width="20" alt="알림">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="content" id="mybook_content">
+
+            <div id="mybook_bg">
+                <div class="user_box1">
+                    <div>
+                        <div class="icon"><a href="#none"></a></div>
+                        <img src="./img/mybook.png" width="80" alt="유저사진">
+                        <p>제이님의 서재</p>
+                        <span>팔로워 0</span><span>팔로잉 0</span>
+                    </div>
+                </div>
+                <div class="user_box2">
+                    <ul>
+                        <li><a href="#none">읽은책<p>0&nbsp;&nbsp;&nbsp;></p></a></li>
+                        <li><a href="#none">인용문<p>0&nbsp;&nbsp;&nbsp;></p></a></li>
+                        <li><a href="#none">좋아요<p>0&nbsp;&nbsp;&nbsp;></p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blank"></div>
+
+            <!--탭메뉴-->
+            <div id="mybook_contents">
+                <div data-role="tabs" id="tab">
+                    <div data-role="navbar" id="title">
+                        <ul class="cf">
+                            <li><a id="tab0" href="#one" class="ui-btn-active">도서</a></li>
+                            <li><a id="tab1" href="#two">책장</a></li>
+                            <li><a id="tab2" href="#three">선호작품</a></li>
+                        </ul>
+                    </div>
+    
+                    <div id="one" class="tabs_contents" style="display: none">
+                        <ul class="cont cf">
+                            <div class="cont_tit">
+                                <p>0권의 도서</p>
+                                <div class="icon_box"><a href="#none"></a></div>
+                            </div>
+                            <div class="cont_contents">
+                                <div class="icon"></div>
+                                <p>서재에 등록된 도서가 없습니다</p>
+                            </div>
+                        </ul>
+                    </div>
+    
+                    <div id="two"  class="tabs_contents" style="display: none">
+                        <ul class="cont cf">
+                            <div class="cont_tit">
+                                <p>0권의 도서</p>
+                                <div class="icon_box"><a href="#none"></a></div>
+                            </div>
+                            <div class="cont_contents">
+                                <div class="icon"></div>
+                                <p>서재에 등록된 도서가 없습니다</p>
+                            </div>
+                        </ul>
+                    </div>
+    
+                    <div id="three"  class="tabs_contents" style="display: none">
+                        <ul class="cont cf">
+                            <div class="cont_tit">
+                                <p>0권의 도서</p>
+                                <div class="icon_box"><a href="#none"></a></div>
+                            </div>
+                            <div class="cont_contents">
+                                <div class="icon"></div>
+                                <p>서재에 등록된 도서가 없습니다</p>
+                            </div>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" id="footer">
+            <a href="#main1" data-role="none" class="home"><img src="img/icon_home.png" alt="home">홈</a>
+            <a href="#search" data-role="none" class="search"><img src="img/icon_search.png" alt="search"> 검색</a>
+            <a href="#mybook" data-role="none" class="mybook"><img src="img/icon_bookmark.svg" alt="mybook"> 내서재</a>
+            <a href="#cart" data-role="none" class="cart"><img src="img/icon_cart.svg" alt="cart"> 카트</a>
+            <a href="#setting" data-role="none" class="Setting"><img src="img/icon_setting.svg" alt="setting"> 관리</a>
+        </div>
+
+    </div>
+    <!--mybook-->
+
+
+    <!-- cart-->
+    <div data-role="page" id="cart">
+
+        <div data-role="header" data-position="fixed" id="header">
+            <div>
+                <h1 data-role="none">
+                    <a href="main1" data-role="none" class="logo">
+                        <img src="./img/ridibooks_logo.png" alt="로고">
+                    </a>
+                </h1>
+                <div id="btn" class="ui-btn-right">
+                    <a href="#search" data-role="none" class="search">
+                        <img src="img/icon_search.png" width="20" alt="돋보기">
+                    </a>
+                    <a href="#none" data-role="none" class="bell">
+                        <img src="img/icon_bell.png" width="20" alt="알림">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="content" id="cart_content">
+            <div class="cart_top">
+                <p>장바구니 보관 기간은 최대 90일이며,<br>90일 이후에는 장바구니에서 자동 삭제됩니다.</p>
+            </div>
+            <div class="cart_wrap">
+                <h4>장바구니</h4>
+                <div class="box1">
+                    <p>상품이 없습니다</p>
+                </div>
+                <div class="box2">
+                    <p>상품금액<span>0원</span> </p>
+                    <p>배송비<span>0원</span> </p>
+                    <div class="line"></div>
+                    <p style="font-weight: bold;">결제예상금액<span>0원</span></p>
+                    <p>*종이책 구매시 25,000원 이상은 무료배송입니다.</p>
+                </div>
+                <div class="btn_wrap">
+                    <button class="btn1">선택삭제</button>
+                    <button class="btn2">주문하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" id="footer">
+            <a href="#main1" data-role="none" class="home"><img src="img/icon_home.png" alt="home">홈</a>
+            <a href="#search" data-role="none" class="search"><img src="img/icon_search.png" alt="search"> 검색</a>
+            <a href="#mybook" data-role="none" class="mybook"><img src="img/icon_bookmark.svg" alt="mybook"> 내서재</a>
+            <a href="#cart" data-role="none" class="cart"><img src="img/icon_cart.svg" alt="cart"> 카트</a>
+            <a href="#setting" data-role="none" class="Setting"><img src="img/icon_setting.svg" alt="setting"> 관리</a>
+        </div>
+        
+    </div>
+    <!-- cart-->
+
+
+    <!-- Setting -->
+    <div data-role="page" id="setting">
+
+        <div data-role="header" data-position="fixed" id="header">
+            <div>
+                <h1 data-role="none">
+                    <a href="main1" data-role="none" class="logo">
+                        <img src="./img/ridibooks_logo.png" alt="로고">
+                    </a>
+                </h1>
+                <div id="btn" class="ui-btn-right">
+                    <a href="#search" data-role="none" class="search">
+                        <img src="img/icon_search.png" width="20" alt="돋보기">
+                    </a>
+                    <a href="#none" data-role="none" class="bell">
+                        <img src="img/icon_bell.png" width="20" alt="알림">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="content" id="setting_content">
+
+            <div class="box1">
+                <div id="tit_box" class="cf">
+                    <div id="user-id">
+                        <p>jaejae92</p>
+                        <p>jaejae92@gmail.com</p>
+                    </div>
+                    <div id="logout">
+                        <button class="logout_btn">로그아웃</button>
+                    </div>
+                </div>
+                <div class="content_box">
+                    <ul class="cf">
+                        <li><div class="icon1"></div><p>리디캐시<span>0원</span></p></li>
+                        <li><div class="icon2"></div><p>리디포인트<span>0원</span></p></li>
+                        <li><div class="icon3"></div><p>쿠폰<span>0원</span></p></li>
+                    </ul>
+                    <ul class="cf">
+                        <li><div class="icon4"></div><p>내 서재<span>0권</span></p></li>
+                        <li><div class="icon5"></div><p>카트<span>0권</span></p></li>
+                        <li><div class="icon6"></div><p>위시리스트<span>0권</span></p></li>
+                    </ul>
+                    <button class="ridi_cash">리디캐시 충전</button>
+                </div>
+            </div>
+
+            <div class="setting_list">
+                <ul data-role="listview" class="list">
+                    <li data-role="list-divider" class="li1">책</li>
+                    <li><a href="#"><h6>선호작품</h6></a></li>
+                    <li><a href="#"><h6>최근 본 책</h6></a></li>
+                    <li><a href="#"><h6>위시리스트</h6></a></li>
+                    <li><a href="#"><h6>독서노트</h6></a></li>
+                    <li><a href="#"><h6>신간알림</h6></a></li>
+                    <li><a href="#"><h6>이벤트 알람 설정</h6></a></li>
+                </ul>
+                <ul data-role="listview" class="list">
+                    <li data-role="list-divider" class="li1">구매/혜택</li>
+                    <li><a href="#"><h6>결제 내역</h6></a></li>
+                    <li><a href="#"><h6>입금 대기</h6></a></li>
+                </ul>
+                <ul data-role="listview" class="list">
+                    <li data-role="list-divider" class="li1">개인</li>
+                    <li><a href="#"><h6>1:1문의</h6></a></li>
+                    <li><a href="#"><h6>내 기기 관리</h6></a></li>
+                    <li><a href="#"><h6>내 리부 관리</h6></a></li>
+                    <li><a href="#"><h6>정보 변경</h6></a></li>
+                </ul>
+            </div>
+
+        </div>
+    
+        <div data-role="footer" data-position="fixed" id="footer">
+            <a href="#main1" data-role="none" class="home"><img src="img/icon_home.png" alt="home">홈</a>
+            <a href="#search" data-role="none" class="search"><img src="img/icon_search.png" alt="search"> 검색</a>
+            <a href="#mybook" data-role="none" class="mybook"><img src="img/icon_bookmark.svg" alt="mybook"> 내서재</a>
+            <a href="#cart" data-role="none" class="cart"><img src="img/icon_cart.svg" alt="cart"> 카트</a>
+            <a href="#setting" data-role="none" class="Setting"><img src="img/icon_setting.svg" alt="setting"> 관리</a>
+        </div>
+
+    </div>
+    <!-- Setting -->
+
+
+</body>
+</html>

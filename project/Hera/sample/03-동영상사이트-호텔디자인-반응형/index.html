@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+   <title>DESIGN HOTELS</title>
+   <meta charset='utf-8'>
+   
+   <!-- 반응형 웹사이트 제작 -->
+   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.8, minimum-scale=1.0'>   
+   
+   <!-- 회사 홈페이지 title, subject, 키워드, 설명, 분류, 저작권, 제작사, 제작날짜, 퍼브리셔, 제작지역, 로봇엔진-인덱스,메인  -->
+   <meta name='Title'          content='DESIGN HOTELS'>
+   <meta name='Subject'       content='DESIGN HOTELS ORIGINAL EXPERIENCES'>
+   <meta name='Keywords'       content='Design Hotels, OE, Original Experiences, Luxury Hotels, Boutique Hotels'>
+   <meta name='Description'    content='Selected Design Hotels™ are now part of Original Experiences. Explore and get inspired.'>
+   <meta name='Classification' content='HOTEL'>
+   <meta name='Copyright'       content='DESIGN HOTELS'>
+   <meta name='Author'       content='DESIGN HOTELS'>
+   <meta name='Author-date'    content='2019-05-09'>
+   <meta name='Publisher'       content='shin hyun joo'>
+   <meta name='Location'       content='Seoul Korea'>
+   <meta name='Robots'       content='index,follow'>  <!-- meta robots 태그를 사용해서 인덱싱을 제어. 사용 가능한 content 로는 index, noindex, follow, nofollow. 
+   index와 noindex는 페이지의 인덱스 여부를 말해주며 follow, nofollow는 페이지내의 링크를 크롤러가 따라갈수 있느냐 없느냐의 여부 .
+   index는 로봇이 본페이지 방문을 허용하는지,  follow는 로봇이 본페이지의 링크세테이션을 기준으로 방문을 허용하는지 기준
+   출처: https://hunit.tistory.com/312 [HunIT Blog]
+-->
+   
+   <link href='css/reset.css' rel='stylesheet'>
+   <link href='css/style.css' rel='stylesheet'>
+   <link href='css/respons.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>   
+   
+   <!-- 자바스크립트가 실행되기위한 스크립트 라이브러리 -->
+   <script src='js/lib/jquery-1.12.4.min.js'></script>
+   <!-- 벤더프리픽스를 붙이지 않아도 되는 스크립트 -->
+   <script src='js/lib/prefixfree.min.js'></script>
+   <!-- 제작자 스크립트 -->
+   <script src='js/appbar.js'></script>
+   
+   
+   
+   
+   <!--조건주석문 익스프롤러에서만 사용 하위버전 문제점 보완하는 플러그인(폴리필)-->
+   <!-- ie9 보다 작거나 같다면, ie8 보다 작거나 같다면-->
+   <!-- PIE.js는 IE6~8까지의 버전에 대해 CSS3의 일부기능을 사용할 수 있게 해주는 라이브러리 
+   PIE가 CSS3의 모든 표현을 구현하려고 노력은 하고 있으나 아직은 일부에 대해서만 지원이 가능
+   PIE에서 사용 가능한 기능들은 아래와 같습니다.
+
+   border-radius
+   box-shadow
+   background 의 linear-gradient
+   
+   적용을 위해서는IE9이하 버전에 대해  PIE.js를 불러와야 함.
+   
+   -->
+   
+   <!--[if (lte IE 9)]> 
+      <script src='js/lib/IE9.js'></script>
+   <![endif]-->
+
+   <!--[if (lte IE 8)]>
+      <script src='js/lib/html5shiv.min.js'>
+      <script src='js/lib/PIE.js'>
+      <script src='js/lib/jqPIE.js'>
+   <![endif]-->
+
+</head>
+<body>
+<div id="wrap">
+   <header id="header">
+      <div>
+         <ul class="pc floatclear">
+            <li>
+               <h1>
+                  <a href="index.html">
+                     <img src="img/white-logo-icon-dh.png" alt="logo">
+                     <span>DESIGN HOTELS</span>
+                  </a>
+               </h1>
+            </li>
+            <li>
+               <aside class="floatclear">
+                  <ul class="floatclear">
+                     <li><a href="#">Join</a></li>
+                     <li> | </li>
+                     <li><a href="#">Log in</a></li>
+                     <li><a href="#">Subscribe</a></li>
+                  </ul>
+               </aside>
+               <nav>
+                  <ul class="floatclear">
+                     <li><a href="#"><i class="fa fa-search"></i></a></li>
+                     <li><a href="#">HOTELS & RESORTS</a></li>
+                     <li><a href="#">DEALS</a></li>
+                     <li class="addDeco"><a href="#">ORIGINAL EXPERIENCES</a></li>
+                     <li><a href="#">CULTURE</a></li>
+                     <li><a href="#">GALLERY</a></li>
+                     <li><a href="#">STORE</a></li>
+                  </ul>
+               </nav>
+            </li>
+         </ul>  <!-- class="pc floatclear" -->
+         <div class="mobile">
+            <ul>
+               <li>
+                  <a href="#" class="appBarBtn">
+                     <i class="bar1 bar"></i>
+                     <i class="bar2 bar"></i>
+                     <i class="bar3 bar"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="index.html" class="mobile-logo-btn">
+                     <img src="img/logo-icon-dh.png" alt=""><span>DESIGN HOTELS</span>
+                  </a>
+               </li>
+               <li><a href="#" class="mobile-find-btn"><i class="fa fa-search"></i></a></li>
+            </ul>
+         </div> <!-- class="mobile" -->
+      </div>
+   </header>
+   <main id="main">
+      <section id="section1">
+         <div>
+            <video class="mainVideo" autoplay loop muted poster=''> 
+               <!-- 동영상이 로딩될때까지 보여질 이미지 poster -->
+               <source src="video/main.mp4" type="video/mp4">
+            </video>
+            <div class="section1-bottom-icon-wrap">
+               <div class="section1-icon-left-wrap">
+                  <a href="#" class="addIconBg"><i class="fas fa-video"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+               </div>
+               <div class="section1-icon-center-wrap">
+                  <a href="#"><i class="fa fa-angle-down"></i></a>
+               </div>
+               <div class="section1-icon-right-wrap">
+                  <a href="#"><i class="fas fa-play"></i></a>
+                  <a href="#"><i class="fas fa-volume-mute"></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="section2">
+         <div>
+            <ul class="floatclear">
+               <li>
+                  <ul>
+                     <li>
+                        <h2>
+                           Travel the World of Original Experiences
+                           <span></span>
+                        </h2>
+                     </li>
+                     <li>
+                        <p>
+                           As time passes, what endures are the moments that moved your soul or altered your mind—the Original Experiences that stay with you long after you’ve returned home. Explore the world of Design Hotels™ Original Experiences, and begin dreaming up your next extraordinary trip.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <ul>
+                     <li>
+                        <h2>
+                           Travel the World of Original Experiences
+                           <span></span>
+                        </h2>
+                     </li>
+                     <li>
+                        <p>
+                           As time passes, what endures are the moments that moved your soul or altered your mind—the Original Experiences that stay with you long after you’ve returned home. Explore the world of Design Hotels™ Original Experiences, and begin dreaming up your next extraordinary trip.
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="section3">
+         <div>
+            <div class="section3-nav">
+               <ul>
+                  <li><a href="#">ALL</a></li>
+                  <li><a href="#">BEACH</a></li>
+                  <li><a href="#">CITY</a></li>
+                  <li><a href="#">MOUNTAIN</a></li>
+                  <li><a href="#">ALTERNATIVE</a></li>
+                  <li><a href="#">REJUVENATE</a></li>
+               </ul>
+            </div>
+            <ul class="section3-video floatclear">
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/v1.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>The Ride</h2></li>
+                        <li><p>Istoria, Santorini, Greece</p></li>
+                        <li><a href="#"><span>Explore</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/v2.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>The Ride</h2></li>
+                        <li><p>Istoria, Santorini, Greece</p></li>
+                        <li><a href="#"><span>Explore</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <video class="mainVideo" autoplay loop muted poster="">
+                        <source src="video/v3.mp4" type="video/mp4">
+                     </video>
+                     <p></p>
+                     <ul>
+                        <li><h2>The Ride</h2></li>
+                        <li><p>Istoria, Santorini, Greece</p></li>
+                        <li><a href="#"><span>Explore</span></a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+</div>
+</body>
+</html>

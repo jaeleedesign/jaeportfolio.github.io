@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>jQuery responsiveGallery Plugin Example</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-responsiveGallery.css">
+	<style type="text/css">
+		html{
+
+			background-color: #fefaf5;
+		}
+		.w-gallery{
+			margin-top: 80px;
+		}
+	</style>
+	<script type="text/javascript" src="lib/modernizr.custom.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="src/jquery.responsiveGallery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.responsiveGallery-wrapper').responsiveGallery({
+				animatDuration: 400,
+				$btn_prev: $('.responsiveGallery-btn_prev'),
+				$btn_next: $('.responsiveGallery-btn_next')
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+
+
+<div class="w-gallery">
+  <section id="responsiveGallery-container" class="responsiveGallery-container">
+   <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a> 
+   <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+    <ul class="responsiveGallery-wrapper">
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/0.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">여행의 이유</h2>
+          <h3 class="responsivGallery-position">김영하 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/1.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">바깥은 여름</h2>
+          <h3 class="responsivGallery-position">김애란 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/2.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">사피엔스</h2>
+          <h3 class="responsivGallery-position">유발 하라리 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/3.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">나미야 잡화점의 기적 </h2>
+          <h3 class="responsivGallery-position">히가시노 게이고 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/4.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">선량한 차별주의자</h2>
+          <h3 class="responsivGallery-position">김지혜 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/5.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">천년의 질문</h2>
+          <h3 class="responsivGallery-position">조정래 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/6.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">김이나의 작사법</h2>
+          <h3 class="responsivGallery-position">김이나 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/7.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">저는 주식투자가 처음인데요</h2>
+          <h3 class="responsivGallery-position">강병욱 지음</h3>
+        </div>
+      </li>
+      <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="img/8.gif" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+        <div class="w-responsivGallery-info">
+          <h2 class="responsivGallery-name">채식주의자</h2>
+          <h3 class="responsivGallery-position">한강지음</h3>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>
+
+
+
+</body>
+</html>

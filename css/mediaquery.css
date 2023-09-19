@@ -1,0 +1,112 @@
+/*# sourceURL=css/midiaquery.css */
+/*@ sourceURL=css/midiaquery.css */
+@media screen and (max-width:800px) {
+	.wrapper{display: none;}
+	#menuWrap{display: none;}
+	#hamburger{display: block;}
+	#section1{display: block;}
+	#section2{padding-right: 500px;}
+	#section3{padding-right: 500px;}
+
+}
+
+/* @media screen and (max-width:1600px) {
+	#logo{top:20px;}
+	#main{height:800px;}
+	#menu_btn{top:40px;}
+	#menu{height:400px;}
+	#menu li:first-child{padding-top:30px;}
+	#contact{top:400px;}
+	#contact li:first-child{padding-top:80px;}
+	#main_text{top:32%;}
+	#profile{height:800px;}
+	#profile_section{
+		position:absolute;
+		left:8%;
+		width:84%;
+		height:70%;
+	}
+	#profile_content1 #img_title{
+		display:block;
+		width:86%;
+		height:40px;
+		margin:5px auto;
+		padding:15px 0;
+	}
+	#profile_content1 #img_title i.fa-user-circle{
+		display:block;
+		float:left;
+		font-size:2.1em;
+		color:#344888;
+	}
+	#profile_content1 #img_title p{
+		display:block;
+		float:left;
+		padding-left:10px;
+		font-size:0.75em;
+		font-weight:bold;
+	}
+	#profile_content1 #img_title p span{
+		font-size:0.75em;
+		font-weight:500;
+	}
+	#profile_content1 #img_title i.fa-ellipsis-h{
+		display:block;
+		float:right;
+		font-size:1.2em;
+		color:#aaaaaa;
+		line-height:40px;
+	}
+	#profile_content1 .profile_img{height:320px;}
+	#profile_content1 #img_icon{
+		display:block;
+		width:86%;
+		height:40px;
+		margin:10px auto;
+		padding:6px 0;
+	}
+	#profile_content2_1{height:270px;}
+	ul.profile_tabs {
+		float: left;
+		height:35px;
+		width:100%;
+		font-size:12px;
+	}
+	.profile_tab_container {height:200px;}
+	.profile_tab_container .profile_tab_content ul {margin-top:30px;}
+	.profile_tab_container .profile_tab_content ul li{height:15px;}
+	.profile_tab_container .profile_tab_content ul.first_profile li{padding-bottom:34px;}
+	#medal {top:-200px;}
+	#work{height:800px;}
+	#brandVisual>ul{position:relative; float: left; width: 100%; height: 700px;}
+	#brandVisual>ul>li{position: absolute; width: 100%; height: 500px;}
+
+
+	#brandVisual .visual_0{left: 0;}
+	#brandVisual .visual_1{left: 100%;}
+	#brandVisual .visual_2{left: 200%;}
+
+	.work_content_wrap{margin:100px auto;}
+	.work_title{
+		height:30px;
+		line-height:0;
+	}
+	.btnImg{top:-350px;}
+	#buttonList li{top:10px;}
+	.btnImg .prev{position:absolute; left:50px; cursor:pointer; opacity:0.6;transition:all 0.5s;}
+	.btnImg .next{position:absolute; right:150px; cursor:pointer; opacity:0.6;transition:all 0.5s;}
+	
+	#portfolio{height:800px;}
+	#content_wrap #content #graphic_wrap{height:800px;}
+	#content_wrap #content #graphic_wrap #graphic{height: 700px;}
+	#content_wrap #content #graphic_wrap #graphic .design_tit{padding-top:70px;}
+	#content_wrap #content #graphic_wrap #graphic .tab_content ul li{height: 260px;}
+	.popContent{
+		padding:0% 5%;
+		height:700px;
+		margin:50px auto;
+	}
+	.popContent .container{padding-top: 50px;}
+	.popContent .container .titleContainer .p2{margin-bottom:10px;}
+	.popContent .container .imgContainer{margin:0 auto;}
+} */
